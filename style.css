@@ -5,105 +5,38 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it's above other content */
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.logo-contact {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
+.logo {
     max-height: 50px;
-}
-
-.contact-info {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .contact-info p {
     margin: 0;
-    color: #fff;
-    font-size: 14px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #90EE90;
     font-size: 16px;
 }
 
 #hero {
-    background: url('whk2.jpg') no-repeat center center/cover;
+    background: url('hero1.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    padding: 150px 20px;
-    height: 570px; /* Adjust the height to fit the full image */
-}
-
-#hero .hero-content {
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#hero .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-#services {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#services .service-cards {
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    color: #000; /* Ensuring text color is readable against black background */
+}
+
+.col-md-6 {
+    margin: 0 auto; /* Centering content */
+    text-align: center; /* Centering text */
 }
 
 #services .card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    width: 30%;
+    margin: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 #services .card i {
@@ -112,67 +45,29 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-#services .card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
 
-#services .card p {
-    font-size: 16px;
-    color: #666;
-}
-
-#about {
-    padding: 50px 20px;
+#about img {
+    width: 100%;
+    height: auto;
     text-align: center;
 }
 
-#about .about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap-reverse; /* Reverse the order for smaller screens */
+#team .card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
 }
 
-#about .about-text {
-    flex: 1;
-    padding: 20px;
+footer {
+    background-color: #333;
+    color: #fff;
 }
 
-#team {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#team .team-members {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-
-#team .team-member {
-    text-align: center;
-    width: 30%;
-    margin: 10px;
-}
-
-#team .team-member-img {
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-}
-
-#team .our-clients {
-    text-align: center;
-    width: 30%;
-    margin: 10px;
-}
-
-#team .our-clients-img {
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    object-fit: cover; 
+#clients img {
+    max-width: 300px;
+    height: 300px;
+    padding: 15px;
 }

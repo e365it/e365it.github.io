@@ -6,98 +6,155 @@
     <title>e365 IT Consulting</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo-contact">
-            <div class="logo">
-                <img src="logo.png" alt="e365 IT Consulting Logo">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="e365 IT Consulting Logo" class="logo"></a>
+            <div class="contact-info d-none d-lg-flex">
+                <p class="mb-0">Email: <a href="mailto:e365itconsulting@gmail.com" class="text-white">e365itconsulting@gmail.com</a></p>
+                <p class="mb-0 ms-3">Cell: <a href="tel:+264857600167" class="text-white">+264 85 76 00 167</a></p>
             </div>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:e365itconsulting@gmail.com">e365itconsulting@gmail.com</a></p>
-                <p>Cell: <a href="tel:+264857600167">+264 85 76 00 167</a></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
     </header>
-    <section id="hero">
-        <div class="hero-content">
+    <section id="hero" class="d-flex align-items-center justify-content-center text-center">
+        <div class="container">
             <h1>Welcome to e365 IT Consulting</h1>
-            <p>We provide custom application development for government and small businesses.</p>
-            <a href="#services" class="btn">Learn More</a>
+            <p>We provide custom application development for government,Parastatals, Large and Small businesses.</p>
+            <a href="#services" class="btn btn-success">Learn More</a>
         </div>
     </section>
-    <section id="services">
-        <h2>Our Service Offerings</h2>
-        <div class="service-cards">
-            <div class="card">
-                <i class="fas fa-laptop-code"></i>
-                <h3>FileMaker Custom App Development</h3>
-                <p>We create custom FileMaker applications tailored to your business needs.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-robot"></i>
-                <h3>AI</h3>
-                <p>Implementing AI solutions to enhance business processes and decision-making.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-code"></i>
-                <h3>Software Development</h3>
-                <p>Developing robust software solutions for various business applications.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-briefcase"></i>
-                <h3>SAP</h3>
-                <p>Providing SAP consulting and implementation services to optimize your operations.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Cyber Security Services</h3>
-                <p>Ensuring your business is protected against cyber threats with our security solutions.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Education</h3>
-                <p>Offering training and educational services to enhance your team's skills.</p>
+    <section id="services" class="py-5">
+        <div class="container text-center">
+            <h2>Our Service Offerings</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>FileMaker Custom App Development</h3>
+                            <p>We create custom FileMaker applications tailored to your business needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-robot"></i>
+                            <h3>AI</h3>
+                            <p>Implementing AI solutions to enhance business processes and decision-making.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-code"></i>
+                            <h3>Software Development</h3>
+                            <p>Developing robust software solutions for various business applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>SAP</h3>
+                            <p>Providing SAP consulting and implementation services to optimize your operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Cyber Security Services</h3>
+                            <p>Ensuring your business is protected against cyber threats with our security solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Education</h3>
+                            <p>Offering training and educational services to enhance your team's skills.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>e365 IT Consulting specializes in developing advanced systems and AI solutions tailored for businesses across Namibia and Africa. Our focus lies in technologies critical to enhancing regional security and advancing technological capabilities. As a mission-driven company, we are committed to aligning our work with the principles of the Fourth Industrial Revolution and the Sustainable Development Goals, ensuring impactful solutions for every business we serve..</p>
+    <section id="about" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>e365 IT Consulting specializes in developing advanced systems and AI solutions tailored for businesses across Namibia and Africa. Our focus lies in technologies critical to enhancing regional security and advancing technological capabilities. As a mission-driven company, we are committed to aligning our work with the principles of the Fourth Industrial Revolution and the Sustainable Development Goals, ensuring impactful solutions for every business we serve.</p>
+                </div>
             </div>
         </div>
-        <div class="our-clients">
+    </section>
+    <section id="clients" class="py-5 bg-light">
+        <div class="container text-center">
             <h2>Our Clients</h2>
-            <div class="clients">
-               <img src="cenored.png" alt="cenored" class="our-clients-img">
-            </div>
-    </section>
-    <section id="team">
-        <h2>Meet the Team</h2>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="jossy.jpg" alt="Jossy Uapingene" class="team-member-img">
-                <h3>Jossy Uapingene</h3>
-                <p>Developer & Co-Owner</p>
-                <p>Email: <a href="mailto:jossyuaps@gmail.com">jossyuapsS@gmail.com</a></p>
-            </div>
-            <div class="team-member">
-                <img src="kuna.jpeg" alt="Kuna Kazauana" class="team-member-img">
-                <h3>Kuna Kazauana</h3>
-                <p>Senior Developer & Co-Owner</p>
-                <p>Email: <a href="mailto:kunaijekk@gmail.com">kunaijekk@gmail.com</a></p>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="cenored.png" alt="Cenored" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="more.jpg" alt="Client 2" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="more.jpg" alt="Client 3" class="img-fluid">
+                </div>
             </div>
         </div>
     </section>
+    <section id="team" class="py-5">
+        <div class="container text-center">
+            <h2>Meet the Team</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="jossy.jpg" alt="Jossy Uapingene" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px;">
+                        <div class="card-body">
+                            <h3>Jossy Uapingene</h3>
+                            <p>Developer & Co-Owner</p>
+                            <p>Email: <a href="mailto:jossyuaps@gmail.com">jossyuaps@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="kuna.jpeg" alt="Kuna Kazauana" class="card-img-top rounded-circle mx-auto mt-3" style="width: 150px; height: 150px;">
+                        <div class="card-body">
+                            <h3>Kuna Kazauana</h3>
+                            <p>Senior Developer & Co-Owner</p>
+                            <p>Email: <a href="mailto:kunaijekk@gmail.com">kunaijekk@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-3 bg-dark text-white text-center">
+        <div class="container">
+            <p>&copy; 2024 e365 IT Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
