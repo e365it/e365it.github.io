@@ -1,5 +1,8 @@
+/* Importing Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,8 +18,25 @@ body {
     font-size: 16px;
 }
 
+.navbar {
+    background-color: #28a745; /* Green theme */
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.nav-link {
+    color: #fff !important; /* White color for nav links */
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #f1c40f !important; /* Gold color on hover */
+}
+
 #hero {
-    background: url('hero1.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero1.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     height: 100vh;
@@ -25,31 +45,98 @@ body {
     justify-content: center;
 }
 
-.container {
-    color: #000; /* Ensuring text color is readable against black background */
+#hero h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
 }
 
-.col-md-6 {
-    margin: 0 auto; /* Centering content */
-    text-align: center; /* Centering text */
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+#services {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+#services h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
 }
 
 #services .card {
     margin: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none; /* Removing default border */
 }
 
 #services .card i {
     font-size: 50px;
+    height: 100px;
     color: #28a745;
     margin-bottom: 10px;
 }
 
+#services .card-body {
+    padding: 20px;
+}
 
-#about img {
-    width: 100%;
-    height: auto;
-    text-align: center;
+#about {
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify-all;
+}
+
+#clients {
+    background-color: #fff;
+}
+
+#clients h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+#clients img {
+    max-width: 200px;
+    margin: 15px auto;
+}
+
+#team {
+    background-color: #f8f9fa;
+}
+
+#team h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+#team .card {
+    border: none; /* Removing default border */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #team .card img {
@@ -61,13 +148,19 @@ body {
     margin: 0 auto 15px;
 }
 
+#team .card-body {
+    padding: 20px;
+}
+
 footer {
     background-color: #333;
     color: #fff;
 }
 
-#clients img {
-    max-width: 300px;
-    height: 300px;
-    padding: 15px;
+footer p {
+    margin: 0;
+}
+
+.text-white {
+    color: #fff !important;
 }
